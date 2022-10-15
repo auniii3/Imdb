@@ -2,6 +2,8 @@ let favListSelf;
 var favListDOM = document.getElementById('fav-list');
 var searchedMovieDiv = document.getElementById('searched-movie-div');
 var movDiv = document.getElementById('movie-div');
+
+//class for favmovie list
 class FavMovieList {
     constructor() {
         this.movieList = localStorage.getItem('favList');
@@ -20,6 +22,7 @@ class FavMovieList {
         return;
     }
 
+    //adding movie to dom
     addToDOM(movie) {
         let dom = $(`<li class = "movie">
                             <div class = 'movie-list-container'>
@@ -27,7 +30,7 @@ class FavMovieList {
                                     <a href = "#" id=${movie.id} class="movie-title">
                                     ${movie.title}</a>
                                 </div>
-                                <img src= ${movie.poster} class='movie-poster' 
+                                <img src= ${movie.poster} class='movie-poster' data-id="${movie.id}"
                                 alt='N/A for ${movie.title}' height='120px' width='130px'>
                                 <i title="Remove from favourites" class="fa-solid fa-minus addfav-related" 
                                 data-title="${movie.title}" data-id="${movie.id}" data-poster="${movie.poster}" ></i>

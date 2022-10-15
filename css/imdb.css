@@ -79,11 +79,15 @@ ul{
 
 .movie-poster{
     position: absolute;
-    right: 140px;
+    right: 10%;
     top: 5px;
     border-radius: 7px;
     border: 2px solid black;
     box-shadow: 3px 3px 3px gray;
+}
+
+.movie-poster:hover{
+    cursor: pointer;
 }
 
 li{
@@ -160,4 +164,30 @@ h5{
     font-size: 1.2rem;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 2px 2px 2px gray;
+}
+
+#fav-link{
+    color: red;
+}
+
+#home{
+    color: green;
+}
+@media screen and (max-width:600px){
+    form{
+        margin-left: 5%;
+    }
+    form input{
+        width: 15rem !important;
+    }
+}
+
+@media screen and (max-width:800px){
+    .movie-title{
+        visibility: hidden;
+        overflow: hidden;
+    }
+    .movie-poster{
+        right: 38%;
+    }
 }

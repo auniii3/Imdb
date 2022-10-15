@@ -2,6 +2,7 @@ let moviePageSelf;
 var searchedMovieDiv = document.getElementById('searched-movie-div');
 var favDiv = document.getElementById('fav-list');
 
+//class for getting single movie details
 class MoviePage {
     constructor(movieId) {
         this.movieId = movieId;
@@ -30,6 +31,7 @@ class MoviePage {
 
 
     }
+    //rendering movie dom page
     renderMovie(moviedata) {
         if (moviedata.Poster == "N/A") {
             moviedata.Poster = "https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/movie.png";

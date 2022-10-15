@@ -83,8 +83,9 @@
                             ${movie.Title}</a>
                         </div>
                         <div class="poster-fav">
-                            <img src= ${movie.Poster} class='movie-poster' 
-                            alt='N/A for ${movie.Title}' height='150px' width='150px'>
+                        <img src= ${movie.Poster} class='movie-poster' data-id="${movie.imdbID}"
+                            alt='N/A for ${movie.Title}' height='150px' width='150px'> 
+                            
                             <i title="Add To favourites" 
                             class="fa-regular fa-heart addfav" data-title="${movie.Title}" data-id="${movie.imdbID}"
                                         data-poster="${movie.Poster}"></i>
@@ -151,9 +152,11 @@
 
     //handling all click listener
     function handleClickListener(event) {
+       
         event.preventDefault();
         let target = event.target;
         let classSplit = $(target).attr("class").split(' ');
+    
         if (target.id == 'movie-search') {
             movName = movieDOM.value;
             if (!movName) {
@@ -169,6 +172,11 @@
         }
         else if (classSplit[0] == 'movie-title') {
             new MoviePage(target.id);
+            return;
+        }
+        else if (classSplit[0] == 'movie-poster') {
+            let movieId = $(target).attr('data-id');
+            new MoviePage(movieId);
             return;
         }
 
