@@ -1,0 +1,163 @@
+body{
+    background-image: linear-gradient(to right, #84a98c,#36564e);
+}
+form{
+    margin-left: 48%;
+}
+form input{
+    width: 22rem !important;
+}
+.header{
+    margin-left: 40px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+ul{
+   margin-left: 10%;
+}
+
+#movie-list-div{
+    margin: 10px;
+}
+
+#movie-list h6{
+    margin: 18px;
+    text-decoration: underline;
+    font-size: 1.7rem;
+}
+
+.movie-list-container div{
+    display: inline-block;
+}
+
+.movie{
+    position: relative;
+    width: 80%;
+    height: 8rem;
+    border-radius: 10px;
+    background-color: rgba(218, 215, 205,0.7);
+    margin-bottom: 10px;
+}
+
+
+.single-movie{
+    /* border: 2px solid black; */
+    height: 10rem;
+    /* background-image: linear-gradient(to right,#139cd2,#e565f4); */
+}
+
+.movie:hover{
+    transform: scale(1.05);
+    transition: ease-in-out 0.5s;  
+}
+
+.movie-title{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 7%;
+    color: black;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px grey;
+    word-spacing: 1px;
+    
+}
+
+.movie-title:hover{
+    cursor: pointer;
+}
+
+.title-div{
+    padding: 50px;
+    width: 60%;
+}
+
+.single-movie-title{
+    font-size: 1.5rem;
+}
+
+.movie-poster{
+    position: absolute;
+    right: 140px;
+    top: 5px;
+    border-radius: 7px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px gray;
+}
+
+li{
+    list-style: none;
+}
+
+.addfav{
+    position: absolute;
+    right: 60px;
+    top: 65px;
+    font-size: 1.5rem;
+}
+
+.addfav:hover{
+    cursor: pointer;
+}
+
+.addfav-related{
+    position: absolute;
+    right: 60px;
+    top: 55px;
+    font-size: 1.2rem;
+}
+.addfav-related:hover{
+    cursor: pointer;
+}
+
+.movie-page-poster{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.movie-image{
+    margin-top: 20px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.movie-plot{
+    margin-top: 12px;
+    font-size: 1.1rem;
+    padding: 20px;
+    text-align: justify;
+    color: white;
+    word-spacing: 2px;
+    text-shadow: 3px 3px 5px grey;
+}
+
+.movie-page-poster h1{
+    font-family: sans-serif;
+    word-spacing: 5px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 7px 7px 10px blue;
+}
+
+h5{
+   margin-top: 30px;
+   margin-left: 20px;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 700;
+   text-shadow: 2px 2px 2px gray;
+   text-decoration: underline;
+   font-size: 1.4rem;
+}
+
+#more-details{
+    text-align: center;
+}
+#more-details p{
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 2px;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 2px gray;
+}
